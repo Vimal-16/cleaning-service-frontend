@@ -25,7 +25,7 @@ function BookingForm() {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:5000/api/bookings/create', {
+      const response = await fetch('https://cleaning-service-backend-avjj.onrender.com//api/bookings/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
