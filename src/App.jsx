@@ -32,7 +32,7 @@ function HomePage() {
     localStorage.removeItem('authToken');
     localStorage.removeItem('user');
     setIsLoggedIn(false);
-    window.location.href = '/';
+    window.location.href = '/#/';
   };
   const scrollToServices = () => {
     document.getElementById('services').scrollIntoView({ 
@@ -75,14 +75,14 @@ function HomePage() {
             ) : (
               <>
                 <li>
-                   <Link to="/login">
+                   <Link to="/#/login">
                     <button className="px-6 py-2 bg-white text-blue-600 rounded">
                       Log In
                     </button>
                   </Link>
                 </li>
                 <li>
-                   <Link to="/signup">
+                   <Link to="/#/signup">
                     <button className="px-6 py-2 bg-green-500 text-white rounded">
                       Sign Up
                     </button>
