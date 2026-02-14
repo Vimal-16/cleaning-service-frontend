@@ -19,7 +19,7 @@ function Signup() {
     e.preventDefault();
     
     try {
-      const response = await fetch('https://cleaning-service-backend-avjj.onrender.com//api/auth/signup', {
+      const response = await fetch('https://cleaning-service-backend-avjj.onrender.com/api/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
