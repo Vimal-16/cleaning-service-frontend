@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Signup from './Signup'
 import Login from './Login'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -74,18 +75,18 @@ function HomePage() {
             ) : (
               <>
                 <li>
-                  <a href="/login">
+                   <Link to="/login">
                     <button className="px-6 py-2 bg-white text-blue-600 rounded">
                       Log In
                     </button>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/signup">
+                   <Link to="/signup">
                     <button className="px-6 py-2 bg-green-500 text-white rounded">
                       Sign Up
                     </button>
-                  </a>
+                   </Link>
                 </li>
               </>
             )}
